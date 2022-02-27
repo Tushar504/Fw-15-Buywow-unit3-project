@@ -5,18 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-
-	<link rel="stylesheet" type="text/css" href="styles/navbar.css">
-  <link rel="stylesheet" type="text/css" href="styles/home.css">
-
+	<link rel="stylesheet" type="text/css" href="navbar.css">
 </head>
 <body>
 	<div id="main_navbar"></div>
  <div id="container">
-      
+      <button onclick="window.location.href='cart.html'">cart</button>
       <div id="IMGcover">
         <div id="bigimg">
-          <img  id="bimg"
+          <img id="bimg"
             src="https://cdn.shopify.com/s/files/1/1375/4957/files/1280X1200_1_cbf73c90-9f02-4407-86c2-9363f046de36_768x.jpg?v=1645082805"
             alt=""
           />
@@ -158,12 +155,11 @@
 	
 </body>
 
-<script type="text/javascript" src="scripts/navbar.js"></script>
-<script type="text/javascript" src="scripts/home.js"></script>
+<script type="text/javascript" src="navbar.js"></script>
 <script src="https://kit.fontawesome.com/b4ce217570.js" crossorigin="anonymous"></script>
 <script type="module">
 
-	import {navbar, footer} from "/components/index.js"
+	import {navbar, footer} from "/componentes/index.js"
 	
 	let navbar_div = document.querySelector("#main_navbar");
    navbar_div.innerHTML = navbar();
