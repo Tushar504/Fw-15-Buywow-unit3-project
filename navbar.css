@@ -44,7 +44,7 @@
 			justify-content: center;
 			align-items: center;
 			flex-wrap: wrap;
-			 gap: 0px 40px;
+			gap: 0px 40px;
 			 color: #727272;
 			 font-size: 16px;
 			 white-space: nowrap;
@@ -52,9 +52,6 @@
 			 font-family: sans-serif;
 			 position: relative;
 			 cursor: pointer;
-
-
-
 		}
 		.navbar_img{
 			/*border: 2px solid black;*/
@@ -64,7 +61,6 @@
 			justify-content: center;
 			align-items: center;
 			margin-left: 70px;
-			cursor: pointer;
 			
 
 		}
@@ -817,14 +813,18 @@ input::-webkit-input-placeholder{
 	padding-right: 20px;
 }
 
-
+.inner_img_div{
+	/*border: 2px solid red;*/
+}
 .inner_img_div img{
 	height: 70px;
 	width: 70px;
 
 }
 
-
+.inner_p_div{
+	/*border: 2px solid green;*/
+}
 
 .inner_p_div p{
 	font-weight: 100;

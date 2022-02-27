@@ -1,5 +1,15 @@
-function navbar(){
-	return `<div class="search_div">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>              
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<link href="http://fonts.cdnfonts.com/css/neutra-text-tf" rel="stylesheet">                   
+	<link rel="stylesheet" type="text/css" href="navbar.css">
+</head>
+<body>
+	<div class="search_div">
 		<span><i class="fa fa-times" aria-hidden="true" class="search_1" onclick="search_divhidd()"></i></span>
 		<p>Find anything you need</p>
 		<i class="fa fa-search" aria-hidden="true"></i>
@@ -16,14 +26,14 @@ function navbar(){
 <div class="navbar">
 	<div class="ham_bur"><i class="fas fa-bars"></i></div>
 
-	<div class="navbar_img" onclick="window.location.href='home.html'">
+	<div class="navbar_img">
 	<img  src="https://cdn.shopify.com/s/files/1/1375/4957/files/WOW_logo-02-02-01_5f70367a-c63c-479d-9ebe-21f1eebf6189_256x.png?v=1640789890">
 	</div>
 			<div class="span_nav">
 				<div id="spna_1" class="span_hover"><span>Skin</span>
 					<div class="span_1_inner">
 						<ul>
-							<li onclick="window.location.href='skin_Face_Wash.html'">Face Wash</li>
+							<li>Face Wash</li>
 							<li>Face Scrub</li>
 							<li>Face Serum</li>
 							<li>Face Cream</li>
@@ -40,7 +50,7 @@ function navbar(){
 				<div id="spna_2" class="span_hover"><span>Hair</span>
 					<div class="span_2_inner">
 						<ul>
-							<li onclick="window.location.href='hair_shampoo.html'">Shampoo</li>
+							<li>Shampoo</li>
 							<li>Conditioner</li>
 							<li>Hair Combo Kit</li>
 							<li>Hair Oil</li>
@@ -55,7 +65,7 @@ function navbar(){
 				<div id="spna_3" class="span_hover"><span>Bath & Body</span>
 					<div class="span_3_inner">
 						<ul>
-							<li onclick="window.location.href='wellness.html'">Wellness</li>
+							<li>Wellness</li>
 							<li>Hand Cream</li>
 							<li>Hand Wash</li>
 							<li>Body Wash</li>
@@ -72,7 +82,7 @@ function navbar(){
 					<div class="span_4_inner">
 						<ul>
 
-							<li onclick="window.location.href='massage.html'">Massage Oil</li>
+							<li>Massage Oil</li>
 							<li>Stretch Care</li>
 							<li>3 in 1 Kids</li>
 							<li>Kids Body Lotion</li>
@@ -85,7 +95,7 @@ function navbar(){
 				<div id="spna_5" class="span_hover"><span>Nutrition & Health</span>
 					<div class="span_5_inner">
 						<ul>
-							<li onclick="window.location.href='nutrition_health.html'">Omega Fatty Acids</li>
+							<li>Omega Fatty Acids</li>
 							<li>Multivitamins</li>
 							<li>Weight Management</li>
 							<li>Immunity Care</li>
@@ -103,7 +113,7 @@ function navbar(){
 				<div id="spna_6" class="span_hover"><span>Collections</span>
 					<div class="span_6_inner">
 						<ul>
-							<li onclick="window.location.href='collections_activcharcoal.html'">Activated Charcoal</li>
+							<li>Activated Charcoal</li>
 							<li>Aloe Vera</li>
 							<li>Macadamia</li>
 							<li>Rice water</li>
@@ -143,10 +153,10 @@ function navbar(){
 		<i class="fa fa-times" aria-hidden="true" onclick="hiddDiv()"></i>
 		</div>
 
-		<li onclick="window.location.href='sigin.html'"> <i class="fa fa-arrow-circle-left"></i>  Log in</li>
+		<li> <i class="fa fa-arrow-circle-left"></i>  Log in</li>
 
-		<li onclick="window.location.href='register.html'"><i class="fa fa-user" aria-hidden="true"></i>Register</li>
-		<li onclick="window.location.href='cart.html'"><i class="fa fa-shopping-bag" aria-hidden="true"></i>  View cart</li>
+		<li> <i class="fa fa-user" aria-hidden="true"></i>  Register</li>
+		<li><i class="fa fa-shopping-bag" aria-hidden="true"></i>  View cart</li>
 
 	</ul>
 </div>
@@ -161,17 +171,31 @@ function navbar(){
 	<div class="checkout_sid2">
 		<i class="fa fa-shopping-bag" aria-hidden="true"></i>
 		<p>Your cart is empty</p>
-		<button onclick="window.location.href='cart.html'">Check out our offering</button>
+		<button>Check out our offering</button>
 	</div>
 
-</div>`
+</div>
 
-}
+<!-- <---------------start header here -------------------------> 
+
+<h1>hello world</h1>
+<h1>hello world</h1>
+<h1>hello world</h1>
+<h1>hello world</h1>
+<h1>hello world</h1>
+<h1>hello world</h1>
+<h1>hello world</h1>
+<h1>hello world</h1>
+<h1>hello world</h1>
+<h1>hello world</h1>
 
 
-function footer(){
 
-	return	`
+
+
+<!-- <---------------start footer here -------------------------> 
+
+	<div id="mian_footer">
 	<div class="footer">
 		<div class="footer_1">
 			<div class="footer_img">
@@ -275,8 +299,23 @@ function footer(){
 	</div>
 </div>
 
+</div>
 
-`
-}
+</body>
+<script type="text/javascript" src="navbar.js"></script>
+<script src="https://kit.fontawesome.com/b4ce217570.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	
+	function first_gift(){
+		document.querySelector(".gift_icon").style.visibility = "hidden";
+		document.querySelector(".show_gift_div").style.display = "block"
+	}
 
-export {navbar, footer};
+	function first_gift2(){
+		document.querySelector(".gift_icon").style.visibility = "visible";
+		document.querySelector(".show_gift_div").style.display = "none"
+
+
+	}
+</script>
+</html>
