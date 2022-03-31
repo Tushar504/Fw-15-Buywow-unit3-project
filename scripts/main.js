@@ -25,6 +25,7 @@ function map(data,parent,sec_parent){
     }
     if(window.location.href!=="http://127.0.0.1:5501/cart.html"){
         button.addEventListener("click",() =>{
+        
         alert("product added to cart")
         funcart(ele);
     })
