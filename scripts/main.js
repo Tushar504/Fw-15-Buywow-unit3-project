@@ -29,9 +29,44 @@ function map(data,parent,sec_parent){
         alert("product added to cart")
         funcart(ele);
     })
-    let funcart = (cartdata) =>{
-         storecart.push(cartdata);
-         localStorage.setItem("cart",JSON.stringify(storecart))
+    let funcart = async(cartdata) =>{
+        //  storecart.push(cartdata);
+        //  localStorage.setItem("cart",JSON.stringify(storecart))
+        try {
+            let cart_data = {
+          
+              img:cartdata.img,
+              title:cartdata.title,
+              info:cartdata.info,
+              Dprice:cartdata.Dprice,
+                  
+                  
+                
+          
+          
+           }
+          
+            cart_data = JSON.stringify(cart_data);
+          let token=JSON.parse(localStorage.getItem("token"))
+              let res = await fetch("http://localhost:5000/cart/addtocart", {
+          
+                  method:'POST',
+                  body: cart_data,
+          
+                  headers : {
+                      "Content-Type": "application/json",
+                      Authorization: `Bearer ${token}`
+                  },
+              });
+              let data = await res.json();
+            
+              console.log(data)
+             
+              
+          } catch (error) {
+              console.log("error:", error);
+              
+          }
     } 
     }
    

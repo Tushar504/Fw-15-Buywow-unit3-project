@@ -95,7 +95,7 @@
         });
 
         let data = await res.json();
-      
+       
         if(data.message){
           alert(data.message)
         }
@@ -103,10 +103,14 @@
           alert(data.errors[0].msg)
         }
         else{
+        
+         
           localStorage.setItem("token",JSON.stringify(data.token))
+          
           alert("login successfull")
 
            window.location.href = "home.html"
+           
 
         }
         // console.log(data);
